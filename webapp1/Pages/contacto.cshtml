@@ -1,0 +1,68 @@
+﻿@page
+@model MyApp.Namespace.contactoModel
+@{
+
+}
+
+    <h1 class="display-4">Contacto  pagina de contacto</h1>
+   
+
+
+
+@{
+    string[] nombres = new string[]{
+    "Gancito","galletas","dulce","refresco", "prueba"
+    };
+
+    int[] cantidades = new int[]{
+    20, 30, 40, 10,20
+    };
+
+    int[] precios = new int[]{
+    11, 12, 5, 15,50
+    };
+    int[] pagos = new int []{
+    };
+
+  for (int i = 0; i < cantidades.Length; i++)
+    {
+        int pago = cantidades[i] * precios[i];
+        pagos[i] = pago;
+    }
+}
+
+<table border="1">
+    <tr>
+        <th>Nombre</th>
+        <th>Cantidad</th>
+        <th>Precio</th>
+        <th>Pago</th>
+    </tr>
+    @for (int i = 0; i < nombres.Length; i++)
+    {
+        <tr>
+            <td>@nombres[i]</td>
+            <td>@cantidades[i]</td>
+            <td>$ @precios[i].00</td>
+            <td>$@pagos[i].00</td>
+        </tr>
+    }
+</table>
+
+
+@{
+int total = 0;
+int prueba = 0;
+foreach(int pago in pagos){
+    prueba += 1;
+    total += pago;
+
+}
+
+    <h2>
+    Total: $@total .00
+    @prueba
+    </h2>
+
+}
+    

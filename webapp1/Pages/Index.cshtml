@@ -1,0 +1,49 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+   
+    Hola mundo
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+@{
+int time = 10;
+string name = "Jose";
+
+  if( time < 12){
+
+ <h1 class="display-4">Buenos dias, @name Bienvenido</h1>
+  }
+  else if (time > 12){
+  <h1 class="display-4">Buenos tardes, @name Bienvenido</h1>
+  }
+  else if (time > 20){
+  <h1 class="display-4">Buenos tardes, @name Bienvenido</h1>
+  }
+}
+
+@{
+
+string[] nombres = new string[]{
+"pedro","juan","jose"
+};
+}
+
+<ul>
+@{
+  foreach(string nombre in nombres){
+    <li>Buenas noches @nombre  </li>
+  }}
+</ul>
+
+
+@{
+int num1 = 10;
+int num2 = 20;
+int resultado = num1 + num2;
+<p> El resultado de sumas @num1 mas @num2 es @resultado </p>
+}
