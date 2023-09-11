@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jc230\\.nuget\\packages\\": {}
+    "C:\\Users\\JoseCampos\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jc230\\OneDrive\\Documentos\\GitHub\\programacion\\webapp1\\webapp1.csproj",
+      "projectUniqueName": "C:\\Users\\JoseCampos\\Documents\\razorpages1\\webapp1\\webapp1.csproj",
       "projectName": "webapp1",
-      "projectPath": "C:\\Users\\jc230\\OneDrive\\Documentos\\GitHub\\programacion\\webapp1\\webapp1.csproj",
-      "packagesPath": "C:\\Users\\jc230\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jc230\\OneDrive\\Documentos\\GitHub\\programacion\\webapp1\\obj\\",
+      "projectPath": "C:\\Users\\JoseCampos\\Documents\\razorpages1\\webapp1\\webapp1.csproj",
+      "packagesPath": "C:\\Users\\JoseCampos\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JoseCampos\\Documents\\razorpages1\\webapp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jc230\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\JoseCampos\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"

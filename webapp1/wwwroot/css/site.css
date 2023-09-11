@@ -23,9 +23,8 @@ body {
 
 table{
   margin-top: 2vh;
-  font-size: 3rem;
+  font-size: 1.5rem;
   width: 50%;
-  border: 1px solid black;
 
 }
 th{
@@ -36,4 +35,50 @@ td, tr{
   padding: 10px;
 }
 
+.tdTotal{
+  text-align: end;
+  font-size: 3rem;
+}
 
+.col-md-6{
+  padding: 10px;
+
+}
+
+
+.card{
+  background-color: gray;
+  padding: 10px;
+}
+
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+
+
+.col-md-6{
+    padding: 5px;
+}
+.card{
+    padding: 10px;
+    width: 100%;
+   border-radius: 5%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.asaide-img {
+    height: 120vh;
+    min-width: 20%;
+   
+}
+
+.img-fluid{
+
+    border-radius: 5%;
+    min-height: 40vh;
+    max-height: 40vh;
+    image-orientation: cover;
+}

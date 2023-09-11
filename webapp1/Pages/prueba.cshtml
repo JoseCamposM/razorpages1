@@ -1,0 +1,43 @@
+﻿@page
+@model MyApp.Namespace.pruebaModel
+
+    <div class="container">
+
+
+        <div class="row">
+
+@{
+
+    string[] names = new string[]{
+
+        "jose", "Emilio", "Ebed", "Luis"
+    };
+
+    string[] text = new string[]{
+
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat arcu, molestie vitae quam vel, molestie hendrerit ligula. Curabitur ultrices mauris a rhoncus commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer fermentum tellus in nisi mattis porttitor. Sed at molestie diam, sit amet laoreet ipsum. Pellentesque vel cursus ante. Nunc id massa ut urna scelerisque lacinia. Donec non libero tellus.", 
+        "Vestibulum at erat ut libero dapibus accumsan. Donec fermentum varius enim, in maximus dui fermentum scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla rutrum, nisl a maximus consectetur, quam mauris pellentesque orci, non tristique urna leo in mi. Vestibulum scelerisque eu nulla non gravida. Donec eget mi ipsum. Vestibulum iaculis in sem a fermentum. Pellentesque nec mattis neque, sed porta enim", 
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis erat arcu, molestie vitae quam vel, molestie hendrerit ligula. Curabitur ultrices mauris a rhoncus commodo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer fermentum tellus in nisi mattis porttitor. Sed at molestie diam, sit amet laoreet ipsum. Pellentesque vel cursus ante. Nunc id massa ut urna scelerisque lacinia. Donec non libero tellus.", 
+        "Vestibulum at erat ut libero dapibus accumsan. Donec fermentum varius enim, in maximus dui fermentum scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla rutrum, nisl a maximus consectetur, quam mauris pellentesque orci, non tristique urna leo in mi. Vestibulum scelerisque eu nulla non gravida. Donec eget mi ipsum. Vestibulum iaculis in sem a fermentum. Pellentesque nec mattis neque, sed porta enim", 
+    };
+
+    for (int i = 0; i < 4; i++){
+
+
+        <div class="col-md-6">
+<div class="card text-start">
+  <img class="card-img-top" src="holder.js/100px180/" alt="Title">
+  <div class="card-body">
+    <h4 class="card-title"> @names[i]</h4>
+    <p class="card-text"> @text[i]</p>
+  </div>
+</div>
+</div>
+
+    }
+
+}
+
+        </div>
+    </div>
+

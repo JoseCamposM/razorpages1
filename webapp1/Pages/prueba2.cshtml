@@ -1,0 +1,53 @@
+﻿@page
+@model MyApp.Namespace.prueba2Model
+@{
+
+    string[] names = new string[]{
+        "Jose Campos", "Emilio Rodriguez", "Ebed Rafael", "Luis Antonio"
+    };
+
+    string[] perfiles = new string[]{
+
+        "Perfil Profesional: Desarrollador de Software ", 
+       "Perfil Profesional: Desarrollador de Software ", 
+       "Perfil Profesional: Desarrollador de Software ", 
+       "Perfil Profesional: Desarrollador de Software ", 
+    };
+
+       string[] textos = new string[]{
+
+        "Especialista en tecnología de la información con experiencia en desarrollo, soporte y gestión de proyectos. correo@prueba@gmail.com ", 
+        "Especialista en tecnología de la información con experiencia en desarrollo, soporte y gestión de proyectos. correo@prueba@gmail.com ", 
+        "Especialista en tecnología de la información con experiencia en desarrollo, soporte y gestión de proyectos. correo@prueba@gmail.com ", 
+        "Especialista en tecnología de la información con experiencia en desarrollo, soporte y gestión de proyectos. correo@prueba@gmail.com ", 
+    };
+
+}
+
+    <div class="container">
+        <div class="row">
+
+        @{
+           for(int i = 0; i < names.Length; i++){
+                <div class="col-md-6">
+                    <div class="card h-100">
+                        <img class="img-fluid" src="img/ejemplo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">@names[i]</h2>
+                        <p class="card-text small">
+                        <h5> @perfiles[i] </h5>
+                        <br> @textos[i]
+                        </p>
+                        <a href="perfil.html" class="btn btn-primary">Ver más</a>
+                  </div>            
+           </div>
+              </div>
+           }   
+
+
+
+
+
+
+
+            
